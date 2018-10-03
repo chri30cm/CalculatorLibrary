@@ -31,7 +31,7 @@ namespace CalculatorLibrary
             double result = v1 / v2;
             return result;
         }
-
+         
         public static double Sum(double v1, double v2)
         {
             return 0;
@@ -39,22 +39,47 @@ namespace CalculatorLibrary
 
         public static double Sum(double[] numbers)
         {
-            throw new NotImplementedException();
+            double sum = numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                {
+                    sum += numbers[i];
+                }
+            }
+            return sum;
         }
 
         public static double Minimum(double[] numbers)
         {
-            throw new NotImplementedException();
-        }
+            double min = numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                if (min > numbers[i])
+                {
+                    min = numbers[i];
+                }
+
+            }
+            return min;
+        } 
 
         public static int Maximum(double[] numbers)
         {
-            throw new NotImplementedException();
+            return 0;
+           /* double Maximum = numbers[0];
+            for (int i = 1; i > numbers.Length; i++)
+            {
+                if (Maximum < numbers[i])
+                {
+                    Maximum = numbers[i];
+                }
+            }
+            return numbers;*/
         }
 
         public static double Average(double[] numbers)
         {
-            throw new NotImplementedException();
+            return 0;
         }
     }
 }
