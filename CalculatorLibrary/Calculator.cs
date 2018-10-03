@@ -16,17 +16,20 @@ namespace CalculatorLibrary
 
         public static double Subtract(double v1, double v2)
         {
-            throw new NotImplementedException();
+            double result = v1 - v2;
+            return result;
         }
 
         public static double Multiply(double v1, double v2)
         {
-            return 0;
+            double result = v1 * v2;
+            return result;
         }
 
         public static double Divide(double v1, double v2)
-        {
-            return 0;
+        { 
+            double result = v1 / v2;
+            return result;
         }
 
         public static double Sum(double v1, double v2)
