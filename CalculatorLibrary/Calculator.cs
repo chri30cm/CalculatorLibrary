@@ -34,9 +34,9 @@ namespace CalculatorLibrary
 
         public static double Sum(double[] numbers)
         {
-            double sum = 0;
+            double sum = numbers[0];
 
-            int i = 0;
+            int i = 1;
             while (i < numbers.Length)
             {
                 sum = sum + numbers[i];
@@ -49,10 +49,9 @@ namespace CalculatorLibrary
 
         public static double Minimum(double[] numbers)
         {
-            int i;
             double min = numbers[0];
 
-            for (i = 0; i < numbers.Length; i = i + 1)
+            for (int i = 1; i < numbers.Length; i = i + 1)
             {
                 if (min > numbers[i])
                 {
@@ -64,10 +63,9 @@ namespace CalculatorLibrary
 
         public static double Maximum(double[] numbers)
         {
-            int i;
             double max = numbers[0];
 
-            for (i = 0; i < numbers.Length; i = i + 1)
+            for (int i = 1; i < numbers.Length; i = i + 1)
             {
                 if (max < numbers[i])
                 {
@@ -79,9 +77,9 @@ namespace CalculatorLibrary
 
         public static double Average(double[] numbers)
         {
-            double sum = 0;
+            double sum = numbers[0];
 
-            int i = 0;
+            int i = 1;
             while (i < numbers.Length)
             {
                 sum = sum + numbers[i];
