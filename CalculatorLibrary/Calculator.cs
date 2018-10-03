@@ -32,29 +32,65 @@ namespace CalculatorLibrary
             return result;
         }
 
-        public static double Sum(double v1, double v2)
-        {
-            return 0;
-        }
-
         public static double Sum(double[] numbers)
         {
-            throw new NotImplementedException();
+            double sum = 0;
+
+            int i = 0;
+            while (i < numbers.Length)
+            {
+                sum = sum + numbers[i];
+                i++;
+            }
+
+            return sum;
         }
+
 
         public static double Minimum(double[] numbers)
         {
-            throw new NotImplementedException();
+            int i;
+            double min = numbers[0];
+
+            for (i = 0; i < numbers.Length; i = i + 1)
+            {
+                if (min > numbers[i])
+                {
+                    min = numbers[i];
+                }
+            }
+            return min;
         }
 
-        public static int Maximum(double[] numbers)
+        public static double Maximum(double[] numbers)
         {
-            throw new NotImplementedException();
+            int i;
+            double max = numbers[0];
+
+            for (i = 0; i < numbers.Length; i = i + 1)
+            {
+                if (max < numbers[i])
+                {
+                    max = numbers[i];
+                }
+            }
+            return max;
         }
 
         public static double Average(double[] numbers)
         {
-            throw new NotImplementedException();
+            double sum = 0;
+
+            int i = 0;
+            while (i < numbers.Length)
+            {
+                sum = sum + numbers[i];
+                i++;
+            }
+
+            sum = sum / numbers.Length;
+
+            return sum;
         }
     }
 }
