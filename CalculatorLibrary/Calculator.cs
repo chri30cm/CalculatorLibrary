@@ -32,15 +32,13 @@ namespace CalculatorLibrary
             return result;
         }
 
-        public static double Sum(double[] numbers)
+        public static double Sum(List<double> numbers)
         {
-            double sum = numbers[0];
-
-            int i = 1;
-            while (i < numbers.Length)
+            double sum = 0;
+                
+            for (int i = 0; i < numbers.Count; i++)
             {
                 sum = sum + numbers[i];
-                i++;
             }
 
             return sum;
