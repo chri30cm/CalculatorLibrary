@@ -45,11 +45,11 @@ namespace CalculatorLibrary
         }
 
 
-        public static double Minimum(double[] numbers)
+        public static double Minimum(List<double> numbers)
         {
             double min = numbers[0];
 
-            for (int i = 1; i < numbers.Length; i = i + 1)
+            for (int i = 1; i < numbers.Count; i = i + 1)
             {
                 if (min > numbers[i])
                 {
@@ -59,11 +59,11 @@ namespace CalculatorLibrary
             return min;
         }
 
-        public static double Maximum(double[] numbers)
+        public static double Maximum(List<double> numbers)
         {
             double max = numbers[0];
 
-            for (int i = 1; i < numbers.Length; i = i + 1)
+            for (int i = 1; i < numbers.Count; i = i + 1)
             {
                 if (max < numbers[i])
                 {
@@ -73,20 +73,28 @@ namespace CalculatorLibrary
             return max;
         }
 
-        public static double Average(double[] numbers)
+        public static double Average(List<double> numbers)
         {
             double sum = numbers[0];
 
             int i = 1;
-            while (i < numbers.Length)
+            while (i < numbers.Count)
             {
                 sum = sum + numbers[i];
                 i++;
             }
 
-            sum = sum / numbers.Length;
+            sum = sum / numbers.Count;
 
             return sum;
+        }
+
+        public static string Haha_snydT(string snydt)
+        {
+            while (true)
+            {
+                Console.WriteLine("HAHA SNYDT! HAHA SNYDT!");
+            }
         }
     }
 }
