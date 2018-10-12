@@ -89,12 +89,9 @@ namespace CalculatorLibrary
             return sum;
         }
 
-        public static string Haha_snydT(string snydt)
+        public static double Procent(double v1, double v2)
         {
-            while (true)
-            {
-                Console.WriteLine("HAHA SNYDT! HAHA SNYDT!");
-            }
+            return v1 * v2 / 100; 
         }
     }
 }
